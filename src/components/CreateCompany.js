@@ -14,9 +14,9 @@ function CreateCompany(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // axios.post('http://localhost:3000/company', { name, address, nit, phone }).then((response) => {
-    //   console.log(response.data);
-    // });
+    axios.post('http://localhost:3000/company', { name, address, nit, phone }).then((response) => {
+      console.log(response.data);
+    });
     setShow(true);
   }
 
